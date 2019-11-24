@@ -39,5 +39,5 @@ Now go to the last line of file and add below statement.
 `chmod 600 </path/to/yoursshkey>`
 
 
-## Architecture Digram
+## Architecture Diagram
 ![Architecture](./arch.jpeg)
