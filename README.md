@@ -1,7 +1,7 @@
 
 # Introduction
 
-This repository contain code to demonstrate a CICD pipeline for nginx configuration.
+This repository contain code to demonstrate a CICD pipeline for nginx configuration
 
 ## Infrastructure used are  
 1. Jenkins
