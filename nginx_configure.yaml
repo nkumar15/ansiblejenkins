@@ -16,4 +16,4 @@
       copy:
         src: /var/lib/jenkins/workspace/nginxconfig/nginx.conf
         dest: /etc/nginx/nginx.conf
-      become: yes
+      sudo: true
