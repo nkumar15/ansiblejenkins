@@ -1,0 +1,19 @@
+- hosts: nginxservers
+  tasks:
+    - name: Enable amazon-linux-extras nginx1
+      shell: "amazon-linux-extras enable {{ item }}"
+      become: yes
+      with_items:
+          - nginx1
+    - name: install nginx1 if not installed
+      yum: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
+      become: yes
+    - name: copy the nginx.conf
+      copy:
+        src: /home/ec2-user/nginx.conf
+        dest: /etc/nginx/nginx.conf
+      become: yes
